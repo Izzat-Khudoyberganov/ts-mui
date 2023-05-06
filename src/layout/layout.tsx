@@ -7,11 +7,11 @@ interface LayoutProps {
 }
 const Layout = ({ children }: LayoutProps): JSX.Element => {
     return (
-        <div>
+        <>
             <Navbar />
-            <Box>{children}</Box>
+            <Box minHeight={"90vh"}>{children}</Box>
             <Footer />
-        </div>
+        </>
     );
 };
 
