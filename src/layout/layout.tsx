@@ -1,6 +1,6 @@
-import { Footer, Navbar } from "@/components";
-import { Box } from "@mui/material";
 import React, { ReactNode } from "react";
+import { Box } from "@mui/material";
+import { Footer, Navbar } from "@/components";
 
 interface LayoutProps {
     children: ReactNode;

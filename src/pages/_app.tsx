@@ -25,6 +25,7 @@ export default function App(props: MyAppProps) {
                     name='viewport'
                     content='initial-scale=1, width=device-width'
                 />
+                <title>Material UI</title>
             </Head>
             <ThemeProvider theme={theme}>
                 <CssBaseline />
