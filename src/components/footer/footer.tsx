@@ -1,21 +1,14 @@
 import { Box, Typography } from "@mui/material";
 import { format } from "date-fns";
+import styled from "styled-components";
+
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const Footer = () => {
     return (
-        <Box
-            sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                backgroundColor: "primary.dark",
-                padding: "20px",
-                color: "white",
-            }}
-        >
+        <FooterBox>
             <Typography>
                 {format(new Date(), "yyyy")} All rights reserved
             </Typography>
@@ -24,8 +17,17 @@ const Footer = () => {
                 <InstagramIcon sx={{ cursor: "pointer" }} />
                 <YouTubeIcon sx={{ cursor: "pointer" }} />
             </Box>
-        </Box>
+        </FooterBox>
     );
 };
 
 export default Footer;
+
+const FooterBox = styled(Box)`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    background-color: blue;
+`;
