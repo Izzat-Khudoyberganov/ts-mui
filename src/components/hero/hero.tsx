@@ -61,7 +61,7 @@ const hero = () => {
                             <Box>
                                 <Typography>{item.author.name}</Typography>
                                 <Box>
-                                    {format(new Date(), " dd, MMM, yy")}{" "}
+                                    {format(new Date(), " dd, MMM,  yy")}{" "}
                                     &#x2022; 10 min read
                                 </Box>
                             </Box>
