@@ -29,5 +29,5 @@ const FooterBox = styled(Box)`
     justify-content: space-between;
     padding: 20px;
     color: white;
-    background-color: blue;
+    background-color: #141414;
 `;

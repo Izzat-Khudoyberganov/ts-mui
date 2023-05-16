@@ -1,10 +1,11 @@
+import { Hero } from "@/components";
 import Layout from "@/layout/layout";
-import Button from "@mui/material/Button";
+import "react-multi-carousel/lib/styles.css";
 
 export default function Home() {
     return (
         <Layout>
-            <Button>Click</Button>
+            <Hero />
         </Layout>
     );
 }
