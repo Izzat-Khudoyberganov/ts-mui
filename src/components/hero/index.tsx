@@ -1,21 +1,10 @@
-import { Avatar, Box, Typography } from "@mui/material";
 import Image from "next/image";
+import { Avatar, Box, Typography } from "@mui/material";
 import Carousel from "react-multi-carousel";
 import { format } from "date-fns";
 import styled from "styled-components";
 
-interface AuthorI {
-    name: string;
-    image: string;
-}
-
-interface HeroDataI {
-    image: string;
-    title: string;
-    exerpt: string;
-    author: AuthorI;
-}
-const hero = () => {
+const Hero = () => {
     return (
         <Carousel
             responsive={{
@@ -73,7 +62,7 @@ const hero = () => {
     );
 };
 
-export default hero;
+export default Hero;
 
 const data = [
     {

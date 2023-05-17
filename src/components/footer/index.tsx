@@ -8,7 +8,16 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const Footer = () => {
     return (
-        <FooterBox>
+        <Box
+            sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                padding: "20px",
+                color: "white",
+                backgroundColor: "#141414",
+            }}
+        >
             <Typography>
                 {format(new Date(), "yyyy")} All rights reserved
             </Typography>
@@ -17,7 +26,7 @@ const Footer = () => {
                 <InstagramIcon sx={{ cursor: "pointer" }} />
                 <YouTubeIcon sx={{ cursor: "pointer" }} />
             </Box>
-        </FooterBox>
+        </Box>
     );
 };
 
